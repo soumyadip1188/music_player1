@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music player</title>
+</head>
+<body>
+    <img class="loader" src="logo.png" alt="">
+    <main>
+        <div class="main-text-wrapper">
+            <img class="logo" src="logo.png" alt="">
+            <h1>
+                Find your tune.
+            </h1>
+        </div>
+        <aside class="search-wrapper">
+            <input id="search" type="text">
+            <button id="search-btn">Go</button>
+        </aside>
+        <section class="main-wrapper">
+            <audio id="audio" src=""></audio>
+            <section id="playerId" class="player">
+                <div class="no-preview-wrapper">
+                    <h2>No preview available, please click the button below to listen on Spotify.</h2>
+                </div>
+                <div id="audio-player">
+                    <button id="play" class="play-btn">
+                        <img id="cover-art" src="placeholder.png" alt="">
+                        <img class="play-img" src="play.png" alt="play">
+                        <img class="pause-img" src="pause.jpg" alt="pause">
+                    </button>
+                    <aside class="right-content">
+                        <h2 id="title"></h2>
+                        <p id="artist"></p>
+                        <div id="volume" class="dragdealer volume-control">
+                            <div class="handle drag-handle" id="handle"></div>
+                            <div id="vol_col" class="volume-color"></div>
+                        </div>
+                        <img id="vol-icon" src="volume-up-4-32.png" alt="volume">
+                        <div class="progress-wrapper">
+                            <div class="progress"></div>
+                        </div>
+                    </aside>
+                    <div class="time">
+                     
+                    </div>
+                </div>
+            </section>
+            <section id="search-results" class="results">
+    
+            </section>
+        </section>
+        <aside class="buttons">
+            <button id="listen-spotify">Listen on Spotify</button>
+        </aside>
+    </main>
+    <div class="blurren-img">
+        <div id="blur"></div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
